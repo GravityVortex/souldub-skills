@@ -24,10 +24,8 @@ Successful runs save:
 Install from the public GitHub repository:
 
 ```bash
-npx skills add <owner>/souldub-skills --skill souldub-video-translate
+npx skills add jiabaogithub/souldub-skills --skill souldub-video-translate
 ```
-
-Replace `<owner>` with the GitHub user or organization that owns this repository.
 
 ## Use
 
