@@ -33,7 +33,7 @@ import yaml
 from mutagen import File as MutagenFile
 
 APP_NAME = ".souldub"
-DEFAULT_API_BASE = "https://video-tools-fov5.onrender.com/api/v1"
+DEFAULT_API_BASE = "https://xxx.com/api/v1"
 SCRIPT_DIR = Path(__file__).resolve().parent
 SKILL_DIR = SCRIPT_DIR.parent
 DEFAULT_CONFIG = SKILL_DIR / "config.example.yaml"

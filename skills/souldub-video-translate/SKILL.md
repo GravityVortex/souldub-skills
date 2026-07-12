@@ -62,7 +62,7 @@ Authentication precedence:
 User config example:
 
 ```yaml
-api_base: "https://video-tools-fov5.onrender.com/api/v1"
+api_base: "https://xxx.com/api/v1"
 souldub_api_key: "your-agent-api-key"
 ```
 

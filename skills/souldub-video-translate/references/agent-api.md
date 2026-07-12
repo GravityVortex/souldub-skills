@@ -8,7 +8,7 @@ This document is a runtime reference for the skill. It does not replace `scripts
 
 ## 1. Agent Quick Reference
 
-- Current API base URL: `https://video-tools-fov5.onrender.com/api/v1`.
+- Current API base URL: `https://xxx.com/api/v1`.
 - External API paths are under `/api/v1/...`.
 - All `/api/v1/...` endpoints require an Agent API key. Prefer `Authorization: Bearer ${AGENT_API_KEY}`.
 - Binary video uploads use `PUT {presignedUrl}` directly against the storage presigned URL and do not include an API key.
@@ -396,7 +396,7 @@ Persist at least:
 
 ```json
 {
-  "apiBase": "https://video-tools-fov5.onrender.com/api/v1",
+  "apiBase": "https://xxx.com/api/v1",
   "fileId": "string",
   "uploadId": "string",
   "key": "string",
