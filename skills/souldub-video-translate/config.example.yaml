@@ -1,6 +1,6 @@
 # SoulDub Agent API base URL.
 # The default points to the current Agent API /api/v1 root.
-api_base: "https://video-tools-fov5.onrender.com/api/v1"
+api_base: "https://api.souldub.ai/api/v1"
 
 # Output directory.
 # auto writes to souldub_outputs/<timestamp>-<filename-stem>/ next to the source video.

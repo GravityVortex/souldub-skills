@@ -1,8 +1,10 @@
-# SoulDub Video Translate Skill
+# SoulDub AI Video Translation Skill for AI Agents
 
-Translate local MP4 videos with SoulDub original-voice dubbing, then download the translated video and SRT subtitles.
+Translate local MP4 videos with SoulDub AI video translation and original-voice dubbing, then download the translated video, target-language subtitles, and bilingual SRT subtitles.
 
 This repository publishes the `souldub-video-translate` Agent Skill.
+
+Use it when you want an agent to localize an MP4 video, dub a video into another language, translate video subtitles, or generate bilingual subtitles for review.
 
 ## What It Does
 
@@ -11,7 +13,7 @@ The skill helps an agent:
 - Upload a local `.mp4` video to SoulDub.
 - Create a video translation task.
 - Track long-running translation progress.
-- Download the translated video and subtitles.
+- Download the AI-dubbed translated video and SRT subtitles.
 
 Successful runs save:
 
@@ -33,6 +35,13 @@ After installing, ask your agent to use the skill with a local MP4 path and a ta
 
 ```text
 Use the souldub-video-translate skill to translate C:\path\to\video.mp4 into Japanese.
+```
+
+Other example prompts:
+
+```text
+Use the souldub-video-translate skill to AI dub this MP4 into Chinese.
+Use the souldub-video-translate skill to localize this video and generate bilingual subtitles.
 ```
 
 The skill also accepts supported language names such as `Japanese`, `Chinese`, `日语`, `中文`, and `粤语`.

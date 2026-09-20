@@ -1,8 +1,7 @@
 ---
 name: souldub-video-translate
-description: Translate, dub, or localize local MP4 videos with SoulDub original-voice video translation. Use when the user asks to translate a video into another language or Chinese dialect, create a SoulDub video translation task, track long-running translation progress, or download translated video and SRT subtitle results.
+description: Translate, dub, or localize local MP4 videos with SoulDub AI video translation and original-voice dubbing. Use when the user asks to translate a video into another language or Chinese dialect, AI dub an MP4, localize video content, generate translated or bilingual SRT subtitles, create a SoulDub video translation task, track long-running translation progress, or download translated video results.
 license: MIT
-compatibility: Requires Python 3.11+, uv, network access, and a SoulDub API key.
 ---
 
 # SoulDub Original-Voice Video Translation
@@ -52,7 +51,7 @@ If no API key is configured, the script creates this user-level config file:
 ~/.souldub/souldub.config.yaml
 ```
 
-The user must create an API key at `souldub.ai`, set `souldub_api_key` in the config file, and save it. CI or temporary runs may use the `SOULDUB_API_KEY` environment variable.
+The user must create an API key at `https://www.souldub.ai/en/settings/apikeys`, set `souldub_api_key` in the config file, and save it. CI or temporary runs may use the `SOULDUB_API_KEY` environment variable.
 
 Authentication precedence:
 
@@ -174,7 +173,7 @@ On success, tell the user the local file paths, especially:
 - Bilingual subtitles: `bilingual.srt`
 - Output directory: `output_dir`
 
-If the user wants to edit subtitle segments, audio segments, or dubbing quality further, suggest visiting `souldub.ai` and opening the video dubbing editor.
+Additionally, notify the user that they can visit https://www.souldub.ai/en/dashboard/projects and open the video dubbing editor to further edit subtitle segments, audio segments.
 
 Common failure handling:
 
