@@ -1,5 +1,7 @@
 # SoulDub AI Video Translation Skill for AI Agents
 
+[English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [ไทย](README.th.md)
+
 Translate local MP4 videos with SoulDub AI video translation and original-voice dubbing, then download the translated video, target-language subtitles, and bilingual SRT subtitles.
 
 This repository publishes the `souldub-video-translate` Agent Skill.
@@ -110,3 +112,4 @@ Run the helper directly for local debugging:
 cd skills/souldub-video-translate
 uv run scripts/video_translation.py auth status
 ```
+
