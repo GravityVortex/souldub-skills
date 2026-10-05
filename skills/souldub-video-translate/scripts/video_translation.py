@@ -476,8 +476,15 @@ def validate_video(path_text: str) -> Path:
         raise UserFacingError(f"Video file does not exist: {path}")
     if path.suffix.lower() != ".mp4":
         raise UserFacingError("The current SoulDub Agent API only supports .mp4 files.")
-    if path.stat().st_size <= 0:
+    size_bytes = path.stat().st_size
+    max_size_bytes = 5 * 1024 * 1024 * 1024
+    if size_bytes <= 0:
         raise UserFacingError("Video file size must be greater than 0.")
+    if size_bytes > max_size_bytes:
+        raise UserFacingError(
+            f"Video file size must not exceed 5 GiB; "
+            f"current size is {size_bytes / (1024 ** 3):.3f} GiB."
+        )
     return path
 
 
@@ -486,9 +493,9 @@ def video_duration_seconds(video_path: Path) -> int:
     media = MutagenFile(video_path)
     if media is None or not getattr(media, "info", None) or not getattr(media.info, "length", None):
         raise UserFacingError("Could not read video duration. Confirm the file is a valid MP4.")
-    duration = int(math.ceil(float(media.info.length)))
-    if duration < 1 or duration > 3600:
-        raise UserFacingError(f"Video duration must be within 1..3600 seconds; current value is {duration} seconds.")
+    duration = round(float(media.info.length))
+    if duration < 1 or duration > 1800:
+        raise UserFacingError(f"Video duration must be within 1..1800 seconds; current value is {duration} seconds.")
     return duration
 
 
