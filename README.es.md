@@ -2,6 +2,10 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [ไทย](README.th.md)
 
+<p align="center">
+  <img src="cover-readme.png" alt="SoulDub AI video translation skill cover" width="760">
+</p>
+
 Traduce vídeos MP4 locales con la traducción de vídeo y el doblaje con voz original de SoulDub AI. Después, descarga el vídeo traducido, los subtítulos en el idioma de destino y los subtítulos SRT bilingües.
 
 Este repositorio publica el Agent Skill `souldub-video-translate`.

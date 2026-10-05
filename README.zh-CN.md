@@ -2,6 +2,10 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [ไทย](README.th.md)
 
+<p align="center">
+  <img src="cover-readme.png" alt="SoulDub AI video translation skill cover" width="760">
+</p>
+
 使用 SoulDub AI 视频翻译和原声配音，将本地 MP4 视频翻译成其他语言，然后下载译制视频、目标语言字幕和双语 SRT 字幕。
 
 本仓库发布 `souldub-video-translate` Agent Skill。
