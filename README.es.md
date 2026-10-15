@@ -1,4 +1,4 @@
-# SoulDub AI Video Translation Skill for AI Agents
+# SoulDub AI Video Translation Skill for AI Agents [![Security: B — Skills Directory](https://www.skillsdirectory.com/api/skills/gravityvortex-souldub-video-translate/badge)](https://www.skillsdirectory.com/skills/gravityvortex-souldub-video-translate)
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [ไทย](README.th.md)
 
